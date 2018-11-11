@@ -25,3 +25,5 @@ This project is a backend api built with Express.js and socket.io for communicat
  - eslint
  - eslint-config-strongloop
  - mocha
+ - chai
+ - supertest
