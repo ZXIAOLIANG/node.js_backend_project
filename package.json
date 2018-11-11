@@ -4,8 +4,9 @@
   "description": "backend project",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "posttest": "eslint --ignore-path .gitignore .",
-    "test": "mocha"
+    "test": "NODE_ENV=test mocha test/**/*.js"
   },
   "author": "Xiaoliang Zhou",
   "license": "ISC",
@@ -16,8 +17,10 @@
     "socket.io": "^2.1.1"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
     "eslint": "^5.9.0",
     "eslint-config-strongloop": "^2.1.0",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "supertest": "^3.3.0"
   }
 }
