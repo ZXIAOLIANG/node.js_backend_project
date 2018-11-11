@@ -1,0 +1,23 @@
+{
+  "name": "pet_project",
+  "version": "1.0.0",
+  "description": "backend project",
+  "main": "server.js",
+  "scripts": {
+    "posttest": "eslint --ignore-path .gitignore .",
+    "test": "mocha"
+  },
+  "author": "Xiaoliang Zhou",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongodb": "^2.2.16",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-strongloop": "^2.1.0",
+    "mocha": "^5.2.0"
+  }
+}

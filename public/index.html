@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Backend project</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font: 20px Helvetica, Arial; }
+    </style>
+  </head>
+  <script src="socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script>
+    var socket = io();
+    socket.on('update', (data)=>{
+      console.log(data);
+      $('#messages').append($('<li>').text(data));
+    });
+  </script>
+  <body>
+    <ul id="messages"></ul>
+  </body>
+</html>
